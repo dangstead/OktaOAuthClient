@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Secured Page</title>
+</head>
+
+<body>
+  <h1>Secured Page</h1>
+  <span th:text="${#authentication.principal.attributes.name}">Joe Coder</span>
+  <!-- <span th:text="${#authentication.principal.attributes.claim1}">Claim 1</span> -->
+  <br><a href="idToken">ID Token</a>
+  <br><a href="accessToken">Access Token</a>
+  <br><a href="claims">Claims</a>
+  <br><a href="grantedAuthorities">Granted Authorities</a>
+  <br><a href="simpleGrantedAuthorities">Simple Granted Authorities</a>
+  <br><a href="groups">Groups</a>
+  <br><a href="scopes">Scopes</a>
+</body>
+</html>

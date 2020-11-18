@@ -1,0 +1,13 @@
+server:
+  port: 8080
+okta:
+  oauth2:
+    issuer: https://sub-domain-name.oktapreview.com/oauth2/default
+    clientId: abc
+    clientSecret: xyz
+#    groups-claim: groups
+#    scopes:
+#    - openid
+spring:
+  thymeleaf:
+    cache: false
